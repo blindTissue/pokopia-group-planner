@@ -43,4 +43,3 @@ To refresh from Serebii:
 ```bash
 .venv/bin/python scripts/scrape_pokopia_pokemon_serebii.py
 ```
-

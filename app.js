@@ -371,6 +371,7 @@ function runRecommendation() {
     tr.innerHTML = `
       <td>${index + 1}</td>
       <td>${row.candidate.label}</td>
+      <td>${row.candidate.idealHabitat || "Unknown"}</td>
       <td><strong>${row.combinedScore.toFixed(2)}</strong></td>
       <td>${row.habitatScore}</td>
       <td>${row.favoritesScore}</td>
