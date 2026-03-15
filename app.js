@@ -431,6 +431,7 @@ async function init() {
     runRecommendation();
 
     elements.addPokemon.addEventListener("click", addSelectedPokemon);
+    elements.pokemonSelect.addEventListener("change", addSelectedPokemon);
     elements.clearGroup.addEventListener("click", () => {
       state.groupIds = [];
       renderGroup();
