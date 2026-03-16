@@ -12,13 +12,13 @@
         <p class="eyebrow">Pokopia Group Planner</p>
         <h1>Pokopia Group Recommender</h1>
         <p class="subtitle">
-          Recommendations are ranked by a <strong>combined score</strong> using <strong>Ideal Habitat</strong> and
-          <strong>Favorites</strong>.
+          Recommendations are ranked by <strong>Ideal Habitat</strong> and
+          <strong>Favorites</strong>. Data scraped from <a href="https://www.serebii.net/pokemonpokopia/">serebii.net</a>
         </p>
       </header>
 
       <section class="grid two-up">
-        <article class="panel">
+        <article class="panel current-group-panel">
           <div class="panel-head">
             <h2>Current Group</h2>
             <button id="clearGroup" type="button" class="ghost">Clear Group</button>
@@ -34,8 +34,6 @@
 
           <p class="hint tiny-text">Search filters the dropdown list.</p>
           <p id="groupHint" class="hint" aria-live="polite"></p>
-
-          <ul id="groupList" class="group-list"></ul>
 
           <button id="toggleOverlap" type="button" class="tiny ghost" aria-expanded="false">
             Show Overlap Details
@@ -56,15 +54,19 @@
             </div>
           </div>
 
-          <div class="group-totals" aria-live="polite">
-            <p class="group-total-primary">
-              <strong>Stacked Total Group Score</strong>:
-              <span id="groupTotalStacked">0.00</span>
-            </p>
-            <p class="group-total-primary">
-              <strong>Simple Total Group Score</strong>:
-              <span id="groupTotalSimple">0.00</span>
-            </p>
+          <ul id="groupList" class="group-list"></ul>
+
+          <div class="current-group-bottom">
+            <div class="group-totals" aria-live="polite">
+              <p class="group-total-primary">
+                <strong>Stacked Total Group Score</strong>:
+                <span id="groupTotalStacked">0.00</span>
+              </p>
+              <p class="group-total-primary">
+                <strong>Simple Total Group Score</strong>:
+                <span id="groupTotalSimple">0.00</span>
+              </p>
+            </div>
           </div>
         </article>
 
